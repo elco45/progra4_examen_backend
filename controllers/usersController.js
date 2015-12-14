@@ -12,7 +12,6 @@ exports.createUser = {
        var newUser = new user({
          username : request.payload.username,
          password : SHA3(request.payload.password),
-         scope : request.payload.scope
        });
        newUser.save(function (err) {
          console.log(err);
