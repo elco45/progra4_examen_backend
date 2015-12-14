@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var Regalo = new mongoose.Schema({
-  name : String,
+  nombre : String,
   descripcion : String,
   peso: Number,
   destinatario: String,

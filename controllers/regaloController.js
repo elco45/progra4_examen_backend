@@ -10,7 +10,7 @@ exports.getRegalos = {
 exports.createRegalo = {
   handler: function(request, reply){
     var newRegalo = new regalo({
-      name: request.payload.name,
+      nombre: request.payload.nombre,
       descripcion: request.payload.descripcion,
       peso: request.payload.peso,
       destinatario: request.payload.destinatario,
@@ -25,7 +25,7 @@ exports.createRegalo = {
 exports.modRegalo ={
   handler: function(request,reply){
     regalo.findOneAndUpdate({
-      name: request.payload.name,
+      nombre: request.payload.nombre,
       descripcion: request.payload.descripcion,
       peso: request.payload.peso,
       destinatario: request.payload.destinatario,
